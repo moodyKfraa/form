@@ -1,0 +1,101 @@
+:root{
+    --main-color : rgb(0, 156, 135);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eee;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 30px 50px;
+    background-color: #111;
+    color: #eee;
+    gap: 20px;
+}
+form .inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form .inputs .input{
+    display: flex;
+    flex-direction: column;
+}
+form .inputs .input label{
+    color: #eee;
+    font-weight: 100;
+    letter-spacing: 1px;
+    transform: translateY(-27px);
+    cursor: text;
+    color: var(--main-color);
+    font-size: 17px;
+    opacity: .5;
+}
+@keyframes moveUp {
+    to{transform: translateY(-50px); color: #eee;}
+}
+@keyframes moveDown {
+    from{transform:  translateY(-50px);color: #eee;}
+    to{transform: translateY(-27px);}
+}
+form .inputs input{
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px #eee solid;
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--main-color);
+}
+form .inputs input:focus{
+    outline: none;
+    border-bottom: 1px var(--main-color) solid;
+    color: var(--main-color);
+}
+form .inputs div{
+    position: relative;
+}
+form .inputs i{
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    cursor: pointer;
+}
+form .password-rules{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form .password-rules li{
+    display: flex;
+    gap: 10px;
+}
+form .password-rules li i{
+    color: var(--color);
+}
+form .password-rules li p{
+    margin: 0;
+}
+form .submit{
+    display: flex;
+    justify-content: center;
+}
+form .submit input{
+    padding: 10px 80px;
+    margin-top: 20px;
+    color: #333;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: var(--main-color);
+    color: #eee;
+    border: none;
+    box-shadow: 3px 3px 4px #333;
+}

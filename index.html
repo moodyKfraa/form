@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking style and script -->
+    <link rel="stylesheet" href="./styling/normalize.css">
+    <link rel="stylesheet" href="./styling/regular.min.css">
+    <link rel="stylesheet" href="./styling/solid.min.css">
+    <link rel="stylesheet" href="./styling/style.css">
+
+    <script src="./scripting/script.js" defer></script>
+    <title>form</title>
+</head>
+<body>
+    <form >
+        <div class="inputs">
+            <div class="input">
+                <input type="text" id="name" required value="">
+                <label for="name">name:</label>
+            </div>
+            <div class="input password">
+                <input type="password" id="password" required value="" maxlength="15">
+                <label for="password">password:</label>
+                <i class="fa-solid fa-eye"></i>
+            </div>
+        </div>
+            <ul class="password-rules">
+                <li>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>At least 8 characters</p>
+                </li>
+                <li>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>At least 1 uppercase character</p>
+                </li>
+                <li>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>At least 1 number</p>
+                </li>
+                <li>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>At least 1 special character</p>
+                </li>
+            </ul>
+            <div class="submit">
+                <input type="submit" value="login">
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>
